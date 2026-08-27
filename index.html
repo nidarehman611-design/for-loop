@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+</html>
+<body>
+    <script>
+        let num = Number(prompt("Enter a number"));
+
+if (num > 0) {
+    console.log("Positive");
+} 
+else if (num < 0) {
+    console.log("Negative");
+} 
+else {
+    console.log("Zero");
+}
+
+
+
+
+let numb = Number(prompt("Enter a number"));
+
+if (numb % 2 === 0) {
+    console.log("Even");
+} 
+else {
+    console.log("Odd");
+}
+
+
+
+
+let age = Number(prompt("Enter your age"));
+
+if (age >= 18) {
+    console.log("You can vote");
+} 
+else {
+    console.log("You cannot vote");
+}
+
+
+
+
+
+let marks = Number(prompt("Enter your marks"));
+
+if (marks >= 90 && marks <= 100) {
+    console.log("A+");
+} 
+else if (marks >= 80) {
+    console.log("A");
+} 
+else if (marks >= 70) {
+    console.log("B");
+} 
+else if (marks >= 60) {
+    console.log("C");
+} 
+else {
+    console.log("Fail");
+}
+
+
+
+
+
+
+
+let num1 = Number(prompt("Enter first number"));
+let num2 = Number(prompt("Enter second number"));
+
+if (num1 > num2) {
+    console.log(num1 + " is larger");
+} else if (num2 > num1) {
+    console.log(num2 + " is larger");
+} else {
+    console.log("Both numbers are equal");
+}
+
+
+
+
+
+
+let temperature = Number(prompt("Enter temperature:"));
+
+if (temperature > 40) {
+    console.log("Very Hot");
+} else if (temperature >= 30) {
+    console.log("Hot");
+} else if (temperature >= 20) {
+    console.log("Normal");
+} else {
+    console.log("Cold");
+}
+
+
+
+
+
+
+let username = prompt("Enter username:");
+let password = prompt("Enter password:");
+
+if (username === "admin") {
+
+    if (password === "12345") {
+        console.log("Login Successful");
+    } else {
+        console.log("Wrong Password");
+    }
+
+} else {
+    console.log("Wrong Username");
+}
+
+
+
+
+
+
+
+let aged = Number(prompt("Enter your age:"));
+let markes = Number(prompt("Enter your marks:"));
+let interview = prompt("Enter interview result (pass/fail):");
+
+if (aged >= 18 && marks >= 60) 
+{
+
+    if (interview === "pass") 
+    {
+        console.log("Admission Approved");
+    } 
+    else 
+    {
+        console.log("Admission Rejected: Interview Failed");
+    }
+
+} 
+else 
+{
+    console.log("Admission Rejected: Age or Marks not sufficient");
+}
+
+
+
+
+
+
+
+
+ let pin = Number(prompt("Enter a pin number"));
+
+    let balance = 20000;
+
+    if (pin == 1234) {
+
+        let user = prompt("Select what you want: 1. withdraw, 2. check balance");
+        if (user == "withdraw" || user == 1) {
+            let result = Number(prompt("Enter a withdraw value"));
+            if (result >= 1000) {
+                if (result <= balance) {
+                     let check = balance - result;
+                     console.log("Your remaining balance is", check);
+                } 
+                else 
+                
+                {
+
+                    console.log("Insufficient balance");
+                
+                }
+
+            } 
+            else 
+            
+            {
+
+                console.log("Minimum withdrawal amount is 1000");
+
+            }
+
+        }
+
+        else if (user == 2 || user == "checkbalance") 
+        
+        {
+
+            console.log("Your balance is", balance);
+
+        }
+
+        else 
+        
+        {
+
+            console.log("Invalid option");
+
+        }
+
+    }
+
+    else 
+    
+    {
+
+        console.log("Invalid PIN");
+
+    }
+
+    </script>
+</body>
